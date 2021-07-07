@@ -1,6 +1,6 @@
 {
 	"video": false,
-	"defaultCommandTimeout": 10000,
+	"defaultCommandTimeout": 5000,
 	"testFiles": "**/*.{feature,features}",
 	"ignoreTestFiles": ["*.js", "*.md"],
 	"projectId": "tstre",
@@ -10,7 +10,7 @@
 	"reporterOptions": {
 		"configFile": "reporter-config.json"
 	},
-	"baseUrl": "https://testes",
+	"baseUrl": "https://testes.com.br",
 	"viewportHeight": 600,
 	"viewportWidth": 1000
 }

@@ -9,7 +9,8 @@
 		"scenario:run": "rm -rf cypress/files ; npx cypress run --env",
 		"cy:all": "rm -rf cypress/files ; cypress run --spec **/*.features",
 		"cy:run": "rm -rf cypress/files ; cypress run",
-		"allure:run": "npx cypress run --env allure=true ;  allure generate allure-results --clean "	},
+		"allure:run": "npx cypress run --env allure=true ;  allure generate allure-results --clean "
+	},
 	"keywords": [
 		"testing",
 		"cypress",
