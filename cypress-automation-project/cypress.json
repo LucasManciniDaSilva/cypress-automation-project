@@ -1,0 +1,16 @@
+{
+	"video": false,
+	"defaultCommandTimeout": 10000,
+	"testFiles": "**/*.{feature,features}",
+	"ignoreTestFiles": ["*.js", "*.md"],
+	"projectId": "tstre",
+	"reporter": "cypress-multi-reporters",
+	"screenshotsFolder": "cypress/screenshots",
+	"screenshotOnRunFailure": false,
+	"reporterOptions": {
+		"configFile": "reporter-config.json"
+	},
+	"baseUrl": "https://testes",
+	"viewportHeight": 600,
+	"viewportWidth": 1000
+}

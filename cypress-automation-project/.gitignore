@@ -1,0 +1,7 @@
+# dependencies
+/node_modules
+.vscode
+.prettierrc
+allure-results
+cypress/files
+cypress/screenshots
