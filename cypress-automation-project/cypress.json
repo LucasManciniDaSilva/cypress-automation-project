@@ -10,7 +10,6 @@
 	"reporterOptions": {
 		"configFile": "reporter-config.json"
 	},
-	"baseUrl": "https://testes.com.br",
 	"viewportHeight": 600,
 	"viewportWidth": 1000
 }

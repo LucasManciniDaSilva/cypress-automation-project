@@ -23,3 +23,15 @@ export function attFileAllure(obj, type, information) {
 defineStep('Tenho acesso a url {string}', url => {
 	cy.visit(url)
 })
+
+defineStep('Informo o email {string}', email => {
+	cy.get('#email').type(email)
+})
+
+defineStep('Informo uma senha {string}', password => {
+	cy.get('#password').type(password)
+})
+
+defineStep('Clico no botão de Acessar', () => {
+	cy.get('button').contains('Acessar').click()
+})
