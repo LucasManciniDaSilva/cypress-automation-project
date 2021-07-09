@@ -24,14 +24,10 @@ defineStep('Tenho acesso a url {string}', url => {
 	cy.visit(url)
 })
 
-defineStep('Informo o email {string}', email => {
-	cy.get('#email').type(email)
+defineStep('Informo {string} no campo de {string}', (content, field) => {
+	cy.get(field).type(content)
 })
 
-defineStep('Informo uma senha {string}', password => {
-	cy.get('#password').type(password)
-})
-
-defineStep('Clico no botão de Acessar', () => {
-	cy.get('button').contains('Acessar').click()
+defineStep('Clico no botão de {string}', content => {
+	cy.get('button').contains(content).click()
 })

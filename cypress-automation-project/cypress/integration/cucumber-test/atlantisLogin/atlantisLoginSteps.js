@@ -1,22 +1,9 @@
-///CT-001
 Then(
-	'Verifico se retornou um erro de {string} abaixo do campo de senha',
-	erro => {
-		cy.get('#password-helper-text').contains(erro)
+	'Verifico se retornou um erro de {string} no campo {string}',
+	(erro, field) => {
+		cy.get(field).contains(erro)
 	}
 )
-
-///END CT-001
-
-///CT-002
-Then(
-	'Verifico se retornou um erro de {string} abaixo do campo de email',
-	erro => {
-		cy.get('#email-helper-text').contains(erro)
-	}
-)
-
-///END CT-002
 
 ///CT-003
 Then('Verifico se retornou um erro de {string} utilizando o toastify', erro => {
