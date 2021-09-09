@@ -1,0 +1,65 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Teste de Login do sistema Atlantis Gym",
+    "children" : [ {
+      "name" : "[CT_001] - Realizo um login sem informar uma senha",
+      "uid" : "551a02d48cab728a",
+      "parentUid" : "01acc4edd19b85537ffc2810417fc568",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625852633316,
+        "stop" : 1625852635871,
+        "duration" : 2555
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "[CT_002] - Realizo um login sem informar um email",
+      "uid" : "4acbb412a776fe37",
+      "parentUid" : "01acc4edd19b85537ffc2810417fc568",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625852635888,
+        "stop" : 1625852637232,
+        "duration" : 1344
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "[CT_003] - Realizo um login com um usuário inexistente",
+      "uid" : "f12f8bd4cea3c22d",
+      "parentUid" : "01acc4edd19b85537ffc2810417fc568",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625852637240,
+        "stop" : 1625852641534,
+        "duration" : 4294
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "01acc4edd19b85537ffc2810417fc568"
+  }, {
+    "name" : "Teste de Registro do sistema Atlantis Gym",
+    "children" : [ {
+      "name" : "[CT_001] - Realizo um registro com sucesso",
+      "uid" : "af29743edd0b5621",
+      "parentUid" : "21327dca6a4b42f15731512ac62319fc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625852647586,
+        "stop" : 1625852652602,
+        "duration" : 5016
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "21327dca6a4b42f15731512ac62319fc"
+  } ]
+}

@@ -1,6 +1,7 @@
 import './commands'
 import '@shelex/cypress-allure-plugin'
 import '@bahmutov/cy-api/support'
+import 'cypress-mailslurp'
 
 Cypress.on('test:after:run', (test, runnable) => {
 	if (test.state === 'failed') {

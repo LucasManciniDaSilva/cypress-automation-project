@@ -11,5 +11,8 @@
 		"configFile": "reporter-config.json"
 	},
 	"viewportHeight": 600,
-	"viewportWidth": 1000
+	"viewportWidth": 1000,
+		"env": {
+			"MAILSLURP_API_KEY": "26a6b752a1eb9da9520ade3027f01023d7f806925454b28ffc85560bc1456b4b"
+		}
 }

@@ -1,0 +1,295 @@
+{
+  "uid" : "4acbb412a776fe37",
+  "name" : "[CT_002] - Realizo um login sem informar um email",
+  "fullName" : "[CT_002] - Realizo um login sem informar um email",
+  "historyId" : "e4d38c5b91656dffaf66c0cac08fc742",
+  "time" : {
+    "start" : 1625852635888,
+    "stop" : 1625852637232,
+    "duration" : 1344
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1625852635889,
+        "stop" : 1625852635900,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Given Tenho acesso a url 'https://atlantis.cintra.dev/'",
+      "time" : {
+        "start" : 1625852635905,
+        "stop" : 1625852636064,
+        "duration" : 159
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "visit (\"https://atlantis.cintra.dev/\")",
+        "time" : {
+          "start" : 1625852635905,
+          "stop" : 1625852636063,
+          "duration" : 158
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "When Informo '1234567890' no campo de '#password'",
+      "time" : {
+        "start" : 1625852636064,
+        "stop" : 1625852636473,
+        "duration" : 409
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get (\"#password\")",
+        "time" : {
+          "start" : 1625852636065,
+          "stop" : 1625852636129,
+          "duration" : 64
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "type (\"1234567890\")",
+        "time" : {
+          "start" : 1625852636129,
+          "stop" : 1625852636471,
+          "duration" : 342
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And Clico no botão de 'Acessar'",
+      "time" : {
+        "start" : 1625852636473,
+        "stop" : 1625852636584,
+        "duration" : 111
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get (\"button\")",
+        "time" : {
+          "start" : 1625852636474,
+          "stop" : 1625852636481,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "contains (\"Acessar\")",
+        "time" : {
+          "start" : 1625852636481,
+          "stop" : 1625852636485,
+          "duration" : 4
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "click",
+        "time" : {
+          "start" : 1625852636485,
+          "stop" : 1625852636582,
+          "duration" : 97
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then Verifico se retornou um erro de 'Campo obrigatório' no campo '#email-helper-text'",
+      "time" : {
+        "start" : 1625852636584,
+        "stop" : 1625852637232,
+        "duration" : 648
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get (\"#email-helper-text\")",
+        "time" : {
+          "start" : 1625852636585,
+          "stop" : 1625852636590,
+          "duration" : 5
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "contains (\"Campo obrigatório\")",
+        "time" : {
+          "start" : 1625852636590,
+          "stop" : 1625852636594,
+          "duration" : 4
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "screenshot",
+        "time" : {
+          "start" : 1625852636594,
+          "stop" : 1625852637231,
+          "duration" : 637
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "8eeb0263e83abf0d",
+      "name" : "cucumber-test/atlantisLogin.feature:2021-07-09T17:43:56.600Z",
+      "source" : "8eeb0263e83abf0d.png",
+      "type" : "image/png",
+      "size" : 129088
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 14,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Teste de Login do sistema Atlantis Gym"
+  }, {
+    "name" : "feature",
+    "value" : "Teste de Login do sistema Atlantis Gym"
+  }, {
+    "name" : "tag",
+    "value" : "ct002_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "703f84a87f04d7a7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625852095196,
+        "stop" : 1625852095914,
+        "duration" : 718
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "ct002_login" ]
+  },
+  "source" : "4acbb412a776fe37.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,313 @@
+{
+  "uid" : "f449f7a9dec8e337",
+  "name" : "[CT_003] - Realizo um login com um usuário inexistente",
+  "fullName" : "[CT_003] - Realizo um login com um usuário inexistente",
+  "historyId" : "d259b2e41bf4ac55ee0b5537ef3cca71",
+  "time" : {
+    "start" : 1625852095921,
+    "stop" : 1625852101918,
+    "duration" : 5997
+  },
+  "status" : "failed",
+  "statusMessage" : "Timed out retrying after 5000ms: Expected to find element: `*[class^=\"Toastify__toast-body\"]`, but never found it.",
+  "statusTrace" : "AssertionError: Timed out retrying after 5000ms: Expected to find element: `*[class^=\"Toastify__toast-body\"]`, but never found it.\n    at Context.eval (https://atlantis.cintra.dev/__cypress/tests?p=cypress/integration/cucumber-test/atlantisLogin.feature:78:6)\n    at Context.resolveAndRunStepDefinition (https://atlantis.cintra.dev/__cypress/tests?p=cypress/integration/cucumber-test/atlantisLogin.feature:12311:9)\n    at Context.eval (https://atlantis.cintra.dev/__cypress/tests?p=cypress/integration/cucumber-test/atlantisLogin.feature:11650:35)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Timed out retrying after 5000ms: Expected to find element: `*[class^=\"Toastify__toast-body\"]`, but never found it.",
+    "statusTrace" : "AssertionError: Timed out retrying after 5000ms: Expected to find element: `*[class^=\"Toastify__toast-body\"]`, but never found it.\n    at Context.eval (https://atlantis.cintra.dev/__cypress/tests?p=cypress/integration/cucumber-test/atlantisLogin.feature:78:6)\n    at Context.resolveAndRunStepDefinition (https://atlantis.cintra.dev/__cypress/tests?p=cypress/integration/cucumber-test/atlantisLogin.feature:12311:9)\n    at Context.eval (https://atlantis.cintra.dev/__cypress/tests?p=cypress/integration/cucumber-test/atlantisLogin.feature:11650:35)",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1625852095921,
+        "stop" : 1625852095953,
+        "duration" : 32
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Given Tenho acesso a url 'https://atlantis.cintra.dev/'",
+      "time" : {
+        "start" : 1625852095964,
+        "stop" : 1625852096091,
+        "duration" : 127
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "visit (\"https://atlantis.cintra.dev/\")",
+        "time" : {
+          "start" : 1625852095965,
+          "stop" : 1625852096090,
+          "duration" : 125
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "When Informo 'garrido@gmail.com' no campo de '#email'",
+      "time" : {
+        "start" : 1625852096091,
+        "stop" : 1625852096489,
+        "duration" : 398
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get (\"#email\")",
+        "time" : {
+          "start" : 1625852096091,
+          "stop" : 1625852096146,
+          "duration" : 55
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "type (\"garrido@gmail.com\")",
+        "time" : {
+          "start" : 1625852096146,
+          "stop" : 1625852096486,
+          "duration" : 340
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And Informo '1234567890' no campo de '#password'",
+      "time" : {
+        "start" : 1625852096489,
+        "stop" : 1625852096800,
+        "duration" : 311
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get (\"#password\")",
+        "time" : {
+          "start" : 1625852096490,
+          "stop" : 1625852096495,
+          "duration" : 5
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "type (\"1234567890\")",
+        "time" : {
+          "start" : 1625852096495,
+          "stop" : 1625852096798,
+          "duration" : 303
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And Clico no botão de 'Acessar'",
+      "time" : {
+        "start" : 1625852096800,
+        "stop" : 1625852096912,
+        "duration" : 112
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get (\"button\")",
+        "time" : {
+          "start" : 1625852096801,
+          "stop" : 1625852096808,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "contains (\"Acessar\")",
+        "time" : {
+          "start" : 1625852096808,
+          "stop" : 1625852096812,
+          "duration" : 4
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "click",
+        "time" : {
+          "start" : 1625852096812,
+          "stop" : 1625852096910,
+          "duration" : 98
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "POST https://atlantis-gym.herokuapp.com/auth",
+        "time" : {
+          "start" : 1625852096910,
+          "stop" : 1625852096910,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 4,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then Verifico se retornou um erro de 'Usuário ou Senha Inválidos' utilizando o toastify",
+      "time" : {
+        "start" : 1625852096912,
+        "stop" : 1625852101917,
+        "duration" : 5005
+      },
+      "status" : "failed",
+      "steps" : [ {
+        "name" : "get (\"*[class^=\"Toastify__toast-body\"]\")",
+        "time" : {
+          "start" : 1625852096913,
+          "stop" : 1625852101917,
+          "duration" : 5004
+        },
+        "status" : "failed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 16,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Teste de Login do sistema Atlantis Gym"
+  }, {
+    "name" : "feature",
+    "value" : "Teste de Login do sistema Atlantis Gym"
+  }, {
+    "name" : "tag",
+    "value" : "ct003_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "ct003_login" ]
+  },
+  "source" : "f449f7a9dec8e337.json",
+  "parameterValues" : [ ]
+}
