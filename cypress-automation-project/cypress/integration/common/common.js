@@ -32,3 +32,16 @@ defineStep('Clico no botão de {string}', content => {
 	cy.wait(2000)
 	cy.get('button').contains(content).click()
 })
+
+defineStep(
+	'Verifico se retornou um erro de {string} no campo {string}',
+	(erro, field) => {
+		cy.get(field).contains(erro)
+	}
+)
+
+defineStep('Clico no campo de {string} em {string}', (field, window) => {
+	cy.get(window).within(() => {
+		cy.get(field).click()
+	})
+})

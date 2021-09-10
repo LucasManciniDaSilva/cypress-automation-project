@@ -61,3 +61,10 @@ And(
 Then('Informo o email cadastrado no campo de {string}', field => {
 	cy.get(field).type(commonData.emailAddress)
 })
+
+Then('Verifico se foi redirecionado para a url de dashboard', () => {
+	cy.wait(3000)
+	cy.location().should(loc => {
+		expect(loc.href).to.include('https://atlantis.cintra.dev/dashboard')
+	})
+})
