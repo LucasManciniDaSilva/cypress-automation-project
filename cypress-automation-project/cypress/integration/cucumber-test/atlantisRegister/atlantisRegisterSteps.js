@@ -45,8 +45,10 @@ Then(
 		cy.get('button').contains(content).click()
 		cy.waitForLatestEmail(commonData.inboxId).then(email => {
 			// verify we received an email
-			cy.log(email)
-
+			let code = email.body.toString()
+			cy.log(code)
+			let code2 = code.match(/<span[^>]*>[\n\r\s]+(\d+)?[\n\r\s]+<\/span>/)[1]
+			cy.log(code2)
 			// // verify that email contains the code
 			// assert.strictEqual(/verification code is/.test(email.body), true)
 
