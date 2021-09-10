@@ -29,5 +29,6 @@ defineStep('Informo {string} no campo de {string}', (content, field) => {
 })
 
 defineStep('Clico no botão de {string}', content => {
+	cy.wait(2000)
 	cy.get('button').contains(content).click()
 })

@@ -3,10 +3,8 @@ import { commonData } from '../../common/common'
 
 And('Informo o campo email em {string} dentro de {string}', (field, window) => {
 	cy.createInbox().then(inbox => {
-		// verify a new inbox was created
 		assert.isDefined(inbox)
 
-		// save the inboxId for later checking the emails
 		commonData.inboxId = inbox.id
 		commonData.emailAddress = inbox.emailAddress
 
@@ -40,20 +38,26 @@ And('Informo o campo CNPJ em {string} dentro de {string}', (field, window) => {
 })
 
 Then(
-	'Clico no botão de {string} e verifico se foi enviado o código de confirmacao',
+	'Clico no botão de {string} e verifico se foi enviado o código de confirmação',
 	content => {
 		cy.get('button').contains(content).click()
 		cy.waitForLatestEmail(commonData.inboxId).then(email => {
-			// verify we received an email
-			let code = email.body.toString()
-			cy.log(code)
-			let code2 = code.match(/<span[^>]*>[\n\r\s]+(\d+)?[\n\r\s]+<\/span>/)[1]
-			cy.log(code2)
-			// // verify that email contains the code
-			// assert.strictEqual(/verification code is/.test(email.body), true)
-
-			// // extract the confirmation code (so we can confirm the user)
-			// code = /([0-9]{6})$/.exec(email.body)[1]
+			commonData.confirmationCode = email.body
+				.toString()
+				.match(/<span[^>]*>[\n\r\s]+(\d+)?[\n\r\s]+<\/span>/)[1]
 		})
 	}
 )
+
+And(
+	'Informo o código de confirmação no campo {string} dentro de {string}',
+	(field, window) => {
+		cy.get(window).within(() => {
+			cy.get(field).type(commonData.confirmationCode)
+		})
+	}
+)
+
+Then('Informo o email cadastrado no campo de {string}', field => {
+	cy.get(field).type(commonData.emailAddress)
+})
