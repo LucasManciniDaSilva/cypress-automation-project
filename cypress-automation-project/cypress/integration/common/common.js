@@ -6,16 +6,16 @@ export function logInformation(obj) {
 }
 
 export function attFileAllure(obj, type, information) {
-	const generateNumber = Math.random().toString(10)
+	const timestamp = Date.now()
 
 	cy.writeFile(
-		`cypress/files/testes/${type}_${generateNumber}_${information}.txt`,
+		`cypress/files/testes/${type}_${timestamp}_${information}.txt`,
 		obj
 	)
 
 	cy.allure().fileAttachment(
 		`testes ${type} ${information} `,
-		`cypress/files/testes/${type}_${generateNumber}_${information}.txt`,
+		`cypress/files/testes/${type}_${timestamp}_${information}.txt`,
 		'text/plain'
 	)
 }
@@ -37,6 +37,7 @@ defineStep(
 	'Verifico se retornou um erro de {string} no campo {string}',
 	(erro, field) => {
 		cy.get(field).contains(erro)
+		cy.screenshot()
 	}
 )
 

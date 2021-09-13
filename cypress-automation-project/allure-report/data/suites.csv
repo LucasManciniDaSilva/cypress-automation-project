@@ -1,5 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Fri Jul 09 14:43:55 BRT 2021","Fri Jul 09 14:43:57 BRT 2021","1344","","Teste de Login do sistema Atlantis Gym","","","","[CT_002] - Realizo um login sem informar um email",""
-"passed","Fri Jul 09 14:43:53 BRT 2021","Fri Jul 09 14:43:55 BRT 2021","2555","","Teste de Login do sistema Atlantis Gym","","","","[CT_001] - Realizo um login sem informar uma senha",""
-"passed","Fri Jul 09 14:44:07 BRT 2021","Fri Jul 09 14:44:12 BRT 2021","5016","","Teste de Registro do sistema Atlantis Gym","","","","[CT_001] - Realizo um registro com sucesso",""
-"passed","Fri Jul 09 14:43:57 BRT 2021","Fri Jul 09 14:44:01 BRT 2021","4294","","Teste de Login do sistema Atlantis Gym","","","","[CT_003] - Realizo um login com um usuário inexistente",""

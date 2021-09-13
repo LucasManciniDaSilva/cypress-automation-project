@@ -7,9 +7,6 @@
 	"reporter": "cypress-multi-reporters",
 	"screenshotsFolder": "cypress/screenshots",
 	"screenshotOnRunFailure": false,
-	"reporterOptions": {
-		"configFile": "reporter-config.json"
-	},
 	"viewportHeight": 600,
 	"viewportWidth": 1000,
 		"env": {

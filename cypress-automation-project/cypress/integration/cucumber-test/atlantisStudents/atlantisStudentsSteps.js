@@ -23,6 +23,8 @@ And(
 		cy.get(document).type(studentDocument)
 		cy.get(email).type(studentEmail)
 		cy.get(phone).type(studentPhone)
+
+		cy.screenshot()
 	}
 )
 
@@ -31,5 +33,26 @@ And(
 	(field, value) => {
 		cy.get(field).click()
 		cy.get(`[aria-labelledby="genreSelectLabel"]`).contains(value).click()
+
+		cy.screenshot()
 	}
 )
+
+And(
+	'Informo um Telefone e um Email nos campos de {string} e {string}',
+	(email, phone) => {
+		const studentEmail = faker.internet.email()
+		const studentPhone = faker.phone.phoneNumber()
+
+		cy.get(email).type(studentEmail)
+		cy.get(phone).type(studentPhone)
+
+		cy.screenshot()
+	}
+)
+
+And('Informo um Cpf no campo de {string}', document => {
+	const studentDocument = faker.br.cpf()
+
+	cy.get(document).type(studentDocument)
+})
