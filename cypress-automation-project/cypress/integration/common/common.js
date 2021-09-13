@@ -45,3 +45,14 @@ defineStep('Clico no campo de {string} em {string}', (field, window) => {
 		cy.get(field).click()
 	})
 })
+
+defineStep('Verifico se foi redirecionado para a url de {string}', path => {
+	cy.wait(2000)
+	cy.location().should(loc => {
+		expect(loc.href).to.include('https://atlantis.cintra.dev/' + path)
+	})
+})
+
+defineStep('Informo {string} no campo de {string}', (content, field) => {
+	cy.get(field).type(content)
+})
